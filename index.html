@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#071e2b">
+  <meta name="description" content="Restaurant Fruits de Mer Me Gustar à Casablanca : poissons, fruits de mer, tajines, pizzas et plats gourmands.">
+  <title>Me Gustar | Restaurant de fruits de mer à Casablanca</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/chez-ali-logo.png">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="announcement"><span class="live-dot"></span> Fraîcheur marine, saveurs marocaines <span class="announcement-sep">•</span> Casablanca</div>
+  <header class="site-header">
+    <a class="brand" href="#accueil" aria-label="Me Gustar accueil">
+      <img class="brand-logo" src="assets/chez-ali-logo.png" alt="Logo Me Gustar">
+      <span><strong>ME <em>GUSTAR</em></strong><small>RESTAURANT DE FRUITS DE MER</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" id="mainNav">
+      <a href="#accueil" class="active">Accueil</a><a href="#menu">Notre menu</a><a href="#galerie">Galerie</a><a href="#histoire">Notre histoire</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="header-tools"><label class="language-picker" aria-label="Language"><span>文</span><select id="languageSelect" aria-label="Choose language"><option value="fr">FR</option><option value="en">EN</option><option value="ar">العربية</option></select></label><button class="theme-toggle" id="themeToggle" type="button" aria-label="Activer le thème sombre" title="Thème sombre"><span class="theme-icon">☾</span></button><a class="header-order" href="#menu">Découvrir le menu <span>↗</span></a></div>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-content">
+        <div class="eyebrow"><span></span> RESTAURANT • CASABLANCA</div>
+        <h1>Les trésors<br>de la mer, <i>à votre table.</i></h1>
+        <p>Des saveurs généreuses, des recettes inspirées du Maroc et le plaisir de partager les meilleurs produits de la mer.</p>
+        <div class="hero-actions"><a class="btn btn-gold" href="#menu">Explorer le menu <span>↗</span></a><a class="text-link" href="https://www.google.com/maps/place/Restaurant+Fruits+de+Mer+Me+Gustar/@33.5836254,-7.4780303,19z" target="_blank" rel="noopener">Nous trouver <span>↗</span></a></div>
+        <div class="hero-proof"><div class="stars">★★★★★</div><div><strong>4,4/5</strong><small>65 avis Google indiqués</small></div><span class="proof-line"></span><div><strong>50–100 MAD</strong><small>Budget moyen par personne</small></div></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image"></div><div class="hero-image-shade"></div>
+        <div class="hero-stamp"><span>FRAIS</span><b>✦</b><span>GÉNÉREUX</span><b>✦</b><span>MARIN</span></div>
+        <div class="hero-note"><span class="note-icon">✦</span><span><strong>Le plaisir du partage</strong><small>Une cuisine qui rassemble</small></span></div>
+      </div>
+      <div class="hero-bottom-label">CASABLANCA, MAROC <span>—</span> DEPUIS NOS FOURNEAUX À VOTRE TABLE</div>
+    </section>
+
+    <section class="categories section-wrap">
+      <div class="section-kicker">À LA CARTE</div>
+      <div class="section-heading-row"><div><h2>La mer sous <i>toutes ses formes.</i></h2><p>Une envie ? Trouvez votre prochain plat préféré.</p></div><a class="under-link" href="#menu">Tout le menu <span>↗</span></a></div>
+      <div class="category-strip">
+        <button class="category-chip selected" data-category="Tous"><span>✦</span> Tout le menu</button>
+        <button class="category-chip" data-category="Plats"><span>♨</span> Plats</button>
+        <button class="category-chip" data-category="Fritures"><span>♨</span> Fritures</button>
+        <button class="category-chip" data-category="Grillades"><span>♨</span> Grillades</button>
+        <button class="category-chip" data-category="Salades"><span>◉</span> Salades</button>
+        <button class="category-chip" data-category="Tajines"><span>◉</span> Tajines</button>
+        <button class="category-chip" data-category="Pizzas"><span>◒</span> Pizzas</button>
+        <button class="category-chip" data-category="Pâtes & gratins"><span>⌁</span> Pâtes & gratins</button>
+        <button class="category-chip" data-category="Boissons"><span>◌</span> Boissons</button>
+        <button class="category-chip" data-category="Jus"><span>◌</span> Jus & fruits</button>
+      </div>
+    </section>
+
+    <section class="menu-section section-wrap" id="menu">
+      <div class="menu-intro"><div><div class="section-kicker">LES FAVORIS DE LA MAISON</div><h2>Un menu plein de <i>caractère.</i></h2></div><label class="search-box"><span>⌕</span><input id="menuSearch" type="search" placeholder="Rechercher un plat..." aria-label="Rechercher un plat"></label></div>
+      <div class="menu-grid" id="menuGrid"></div>
+      <div class="menu-footnote"><span>✦</span> Les prix et disponibilités peuvent être confirmés au moment de la commande.</div>
+    </section>
+<section class="gallery-section section-wrap" id="galerie">
+      <div class="section-kicker">EN IMAGES</div>
+      <div class="section-heading-row"><div><h2>Un aperçu de <i>notre univers.</i></h2><p>Des inspirations marines, des plats généreux et le plaisir de partager.</p></div><a class="under-link" href="https://www.instagram.com/_me_gustar/" target="_blank" rel="noopener">Voir Instagram <span>↗</span></a></div>
+      <div class="gallery-grid">
+        <button class="gallery-item gallery-tall" type="button" data-gallery-image="assets/1.jfif" aria-label="Agrandir la photo de fruits de mer"><img loading="lazy" src="assets/1.jfif" alt="Plateau de fruits de mer"/><span>Les trésors de la mer</span></button>
+        <button class="gallery-item" type="button" data-gallery-image="assets/3.jpg" aria-label="Agrandir la photo du poisson"><img loading="lazy" src="assets/3.jpg" alt="Poisson préparé avec soin"/><span>Fraîcheur & saveurs</span></button>
+        <button class="gallery-item" type="button" data-gallery-image="assets/4.jpg" aria-label="Agrandir la photo du plat"><img loading="lazy" src="assets/4.jpg" alt="Plat gourmand de la mer"/><span>La gourmandise à table</span></button>
+        <button class="gallery-item" type="button" data-gallery-image="assets/2.jfif" aria-label="Agrandir la photo du repas"><img loading="lazy" src="assets/2.jfif" alt="Repas généreux à partager"/><span>Le plaisir du partage</span></button>
+        <button class="gallery-item" type="button" data-gallery-image="assets/pizzas.jpg" aria-label="Agrandir la photo de pizza"><img loading="lazy" src="assets/pizzas.jpg" alt="Pizza sortie du four"/><span>Un menu pour toutes les envies</span></button>
+      </div>
+      <p class="gallery-note">Galerie photo : plats, tajines, pizzas, pâtes et boissons.</p>
+    </section>
+
+    <div class="gallery-lightbox" id="galleryLightbox" aria-hidden="true"><button type="button" id="galleryClose" aria-label="Fermer la photo">×</button><img id="galleryLargeImage" src="" alt="Photo agrandie"/></div>
+
+    <section class="feature-band" id="histoire">
+      <div class="feature-photo"></div><div class="feature-content"><div class="section-kicker light">L’ESPRIT ME GUSTAR</div><h2>Le goût de la mer.<br><i>La chaleur du Maroc.</i></h2><p>Chez Me Gustar, on vient pour savourer, se retrouver et partager. Des plats généreux, des recettes familières et une ambiance simple où le plaisir est toujours au menu.</p><a class="btn btn-outline" href="#contact">Préparez votre visite <span>↗</span></a></div>
+      <div class="feature-deco">ME GUSTAR<span>✦</span></div>
+    </section>
+
+    <section class="contact-section section-wrap" id="contact">
+      <div><div class="section-kicker">ON VOUS ATTEND</div><h2>À bientôt autour<br><i>d’un bon plat.</i></h2><p>Une question sur le menu ou votre commande ? Contactez directement le restaurant.</p></div>
+      <div class="contact-card"><div class="contact-item"><span class="contact-icon">⌖</span><div><small>ADRESSE</small><strong>HGMC+FQ8, Casablanca, Maroc</strong><a href="https://www.google.com/maps/place/Restaurant+Fruits+de+Mer+Me+Gustar/@33.5836254,-7.4780303,19z" target="_blank" rel="noopener">Ouvrir l’itinéraire ↗</a></div></div><div class="contact-item"><span class="contact-icon">☎</span><div><small>TÉLÉPHONE</small><strong>07 21 62 48 91</strong><a href="tel:+212721624891">Appeler le restaurant ↗</a></div></div><div class="contact-item"><span class="contact-icon">◷</span><div><small>HORAIRES AFFICHÉS</small><strong>Jusqu’à 22h30</strong><span class="muted">À confirmer avant votre visite</span></div></div><a class="btn btn-dark" href="https://www.instagram.com/_me_gustar/" target="_blank" rel="noopener">Suivre sur Instagram <span>↗</span></a></div>
+    </section>
+  </main>
+  <footer class="footer"><a class="brand footer-brand" href="#accueil"><img class="brand-logo" src="assets/chez-ali-logo.png" alt="Logo Me Gustar"><span><strong>ME <em>GUSTAR</em></strong><small>RESTAURANT DE FRUITS DE MER</small></span></a><span>© <span id="year"></span> Me Gustar · Casablanca</span><a href="#accueil">Retour en haut ↑</a></footer>
+
+  <div class="modal-backdrop" id="dishModal" aria-hidden="true">
+    <section class="dish-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Fermer">×</button>
+      <div class="modal-image" id="modalImage"></div>
+      <div class="modal-content"><div class="section-kicker">VOTRE SÉLECTION</div><h2 id="modalTitle">Nom du plat</h2><p id="modalDescription"></p><div class="modal-price-row"><span>Prix unitaire</span><strong id="modalPrice">0 MAD</strong></div>
+        <div id="optionsWrap"></div>
+        <div class="quantity-row"><span>Quantité</span><div class="quantity-control"><button id="qtyMinus" aria-label="Diminuer">−</button><strong id="qtyValue">1</strong><button id="qtyPlus" aria-label="Augmenter">+</button></div></div>
+        <div class="modal-total"><span>Total</span><strong id="modalTotal">0 MAD</strong></div>
+        <button class="btn btn-gold add-order" id="addToOrder">Ajouter à la commande <span>＋</span></button>
+      </div>
+    </section>
+  </div>
+  <aside class="cart-dock" id="cartDock" aria-live="polite"><div class="cart-summary"><span class="cart-icon">▤</span><div><strong><span id="cartCount">0</span> article(s)</strong><small id="cartTotal">0 MAD</small></div></div><button class="btn btn-gold" id="checkoutBtn">Commander sur WhatsApp <span>↗</span></button></aside>
+  <script>
+    (() => {
+      const lightbox = document.getElementById('galleryLightbox');
+      const largeImage = document.getElementById('galleryLargeImage');
+      const closeButton = document.getElementById('galleryClose');
+      document.querySelectorAll('[data-gallery-image]').forEach((item) => item.addEventListener('click', () => {
+        largeImage.src = item.dataset.galleryImage;
+        largeImage.alt = item.querySelector('img')?.alt || 'Photo agrandie';
+        lightbox.classList.add('open'); lightbox.setAttribute('aria-hidden', 'false'); document.body.style.overflow = 'hidden';
+      }));
+      const close = () => { lightbox.classList.remove('open'); lightbox.setAttribute('aria-hidden', 'true'); largeImage.src = ''; document.body.style.overflow = ''; };
+      closeButton.addEventListener('click', close);
+      lightbox.addEventListener('click', (event) => { if (event.target === lightbox) close(); });
+      document.addEventListener('keydown', (event) => { if (event.key === 'Escape') close(); });
+    })();
+  </script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
